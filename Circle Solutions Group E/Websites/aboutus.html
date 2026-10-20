@@ -41,17 +41,19 @@
         }
 
 
-        .nav-button {
+        .nav-button {   
             background-color: #ffffff;
             color: #799dab; 
             text-decoration: none;
             font-family: Arial, sans-serif;
             font-weight: bold;
             font-size: 14px;
+            text-align: center;
             padding: 10px 22px;
             border-radius: 10px; 
             margin-right: 20px;
             margin-top: 10px;
+            width: 100px;
         }
 
         .nav-button:hover {
@@ -79,20 +81,23 @@
 
         #circles-right{
            float: right;
-           width: 50%;
-          
-        }
-        #circles-right img{
-            float: left;
-            margin-left: 55px;
-            margin-top: 35px;
+           width: 60%;
+           padding: 60px;
+           height: 100%;
+           padding-right: 100px;
+           padding-left: 40px;
+           background-image: url(images/circles.png);
+           background-size: cover;
         }
 
+
         #aboutus{
-            width: 50%;
+            width: 40%;
+            height: 100%;
             float: left;
             font-family: Arial, sans-serif;
             padding: 60px;
+            padding-right: 40px;
             padding-left: 100px;
             color: #333333;
         }
@@ -169,7 +174,7 @@
             
        footer {
             background-color: #c4e9f7;
-            height: 170px;
+            height: 175px;
             width: 100%;
             padding: 20px 30px;
             text-align: left; 
@@ -181,14 +186,19 @@
         .footer-brand {
             font-weight: bold;
             font-size: 20px;
-        color: #799dab;
+            color: #799dab;
+            text-align: left;
+            margin-bottom: 8px;
         }
-
+        .footer-links {
+            margin-bottom: 8px;
+        }
         .footer-links a {
             color: #799dab;
             text-decoration: none;
             padding-right: 15px; 
             font-size: 16px;
+            margin-bottom: 8px;
         }
 
         .footer a {
@@ -196,7 +206,8 @@
             text-decoration: none;
             font-size: 16px;
             display: inline-block;
-            margin-top: 8px;
+            margin-bottom: 8px;
+        
         }
 
         footer span {
@@ -205,6 +216,109 @@
             margin-top: 8px;
         }
 
+        #circles-right h1 {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            width: 100%;
+        }
+        #Rhalf{
+            float: left;
+            width:50%;
+            height:90%;
+            border-radius: 16px;
+            border: #DAEDF5 2px solid;
+            background-color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        #Rhalf h2{
+            text-align: center;
+            width: 100%;
+            margin: 0;
+            font-size: 21px;
+        }
+        #Rhalf label{
+            display: block;
+            color: #799dab;
+            font-size: 18px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            background-color: #f4f9fc;
+            border: 1px solid #e1f0f5;
+            border-radius: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            resize: none;
+        }
+        textarea {
+            height: 170px;
+        }
+        #Rhalf button {
+            width: 100%;
+            background-color: #7a9ea8;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        #Lhalf{
+            float: right;
+            width:45%;
+            height:90%;
+            border-radius: 16px;
+            border: #DAEDF5 2px solid;
+            background-color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .review{
+            font-family: Arial, sans-serif;
+            padding-top: 25px;
+        }
+        .review-card {
+            background-color: #ffffff;
+            border: 1px solid #e1f0f5;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+        .pfp {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 12px;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .user-info strong {
+            display: block;
+            color: #5b7e8a;
+            font-size: 14px;
+        }
+        .user-info small {
+            color: #a0b8c2;
+            font-size: 11px;
+        }
+        .review-card p {
+            color: #799dab;
+            font-size: 13px;
+            line-height: 1.4;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
@@ -215,7 +329,7 @@
         <img src="images/circle_solutions_logo_01.png" alt="Circle Solutions Logo" id="logo">
         </a>
         <nav class="nav-container">
-            <a href="aboutus.html" class="nav-button">About us</a>
+            <a href="Homepage.html" class="nav-button">Home</a>
             <a href="contactpage.html" class="nav-button">Contacts</a>
 
             <div class="language-switch">
@@ -252,7 +366,45 @@
    </div>
 
    <div id="circles-right">
-    <img src="images/circles.png" alt="">
+    <h1> What our clients say</h1>
+    <div id="Rhalf">
+        <h2>sign the guest book</h2>
+    
+        <form>
+            <label>your name</label>
+            <input type="text" placeholder="Jane Doe" required>
+
+            <label>your message</label>
+            <textarea placeholder="Share your experience..." required></textarea>
+
+            <button type="submit">add my entry</button>
+        </form>
+    </div>
+    <div id="Lhalf">
+        <div class="review">
+            <div class="review-card">
+                <div class="user-info">
+                    <img src="images/default.jpg" alt="Profile picture" class="pfp">
+                    <div>
+                        <strong>Marieke van den Berg</strong>
+                        <small>July 14, 2026</small>
+                    </div>
+                </div>
+                <p>Circle Solutions has transformed the way our logistics team handles daily operations. Simple, reliable, and exactly what we needed.</p>
+            </div>
+
+            <div class="review-card">
+                <div class="user-info">
+                    <img src="images/default.jpg" alt="Profile picture" class="pfp">
+                    <div>
+                        <strong>Thomas Gruber</strong>
+                        <small>June 3, 2026</small>
+                    </div>
+                </div>
+                <p>Working with Circle D.O.T.S. was refreshingly straightforward. No over-engineering — just software that actually works for us.</p>
+            </div>
+        </div>
+    </div>
    </div>
    
    </section>
@@ -262,7 +414,7 @@
 
     <div class="footer-brand">Circle Solutions</div>
     <div class="footer-links">
-        <a href="aboutus.html">About us</a>
+        <a href="Homepage.html">Home page</a>
         <a href="contactpage.html">Contact</a>
     </div>
     <a href="mailto:hi@circlesolutions.com">hi@circlesolutions.com</a> <br>
