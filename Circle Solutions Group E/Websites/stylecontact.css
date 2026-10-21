@@ -89,7 +89,7 @@ a{
     justify-content: center;
     background-color: #ffffff;
     height: 40px;
-    width: 150px;
+    width: 120px;
     align-items: center;
     border-radius: 10px;
     font-weight: bold;
@@ -103,7 +103,7 @@ a{
     justify-content: center;
     background-color: #ffffff;
     height: 40px;
-    width: 150px;
+    width: 120px;
     align-items: center;
     border-radius: 10px;
     font-weight: bold;
@@ -127,32 +127,32 @@ p, h1, h4, a {
     margin-right: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
-    #message {
-     height: 200px;
-     width: 500px;
-     border: 2px solid #799dab;
-     outline: none;
-    }
-    #subject, #email, #Contact-person, #Company-name{
-     height: 40px;
-     width: 500px;
-     border: 2px solid #799dab;
-     outline: none;
-    }
-    button{
-        height: 35px;
-        width: 500px;
-        border-radius: 8px;
-        background-color: #799dab;
-        color:#ffffff;
-        border: 2px solid #ffffff;
-        margin-top: 15px;
-        cursor: pointer;
-    }   
-       
-} 
+}
 
+#message {
+    height: 200px;
+    width: 500px;
+    border: 2px solid #799dab;
+    outline: none;
+}
 
+#subject, #email, #Contact-person, #Company-name {
+    height: 40px;
+    width: 500px;
+    border: 2px solid #799dab;
+    outline: none;
+}
+
+button {
+    height: 35px;
+    width: 500px;
+    border-radius: 8px;
+    background-color: #799dab;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    margin-top: 15px;
+    cursor: pointer;
+}
 
 h1{
     padding: 5px;

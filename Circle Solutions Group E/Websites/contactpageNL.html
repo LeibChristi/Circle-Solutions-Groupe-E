@@ -30,14 +30,15 @@
             <p>maar vooral technisch uitdagende producten.</p><br>
             <p>Kunnen wij u helpen?</p>
         </div> 
-        <div class="contact-form">
-            <input type="text" id="Company-name" name="companyname" placeholder="Bedrijfsnaam*"><br><br>
-            <input type="text" id="Contact-person" name="contactperson" placeholder="Contactpersoon*"><br><br>
-            <input type="text" id="email" name="email" placeholder="E-mailadres*"><br><br>
-            <input type="text" id="subject" name="subject" placeholder="Onderwerp*"><br><br>
-            <textarea id="message" name="message" placeholder="Wat is uw uitdaging?"></textarea><br><br>
-            <button>Versturen</button>
-        </div>
+        <form class="contact-form" action="mailto:hi@circlesolutions.com" method="post" enctype="text/plain">
+         <input type="text" id="Company-name" name="Bedrijfsnaam" placeholder="Bedrijfsnaam*" required><br><br>
+         <input type="text" id="Contact-person" name="Contactpersoon" placeholder="Contactpersoon*" required><br><br>
+         <input type="text" id="email" name="Email" placeholder="E-mailadres*" required><br><br>
+         <input type="text" id="subject" name="Onderwerp" placeholder="Onderwerp*" required><br><br>
+         <textarea id="message" name="Bericht" placeholder="Wat is uw uitdaging?"></textarea><br><br>
+         <button type="submit">Versturen</button>
+        </form>
+        
     </div>
 </body>
 <footer>
@@ -49,3 +50,4 @@
     <p>© Circle Solutions</p>
 </footer>
 </html>
+
